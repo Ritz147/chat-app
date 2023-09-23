@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <section class="chat-section">
+        <div class="brand">
+            <i class="fa fa-comments-o" aria-hidden="true"></i>
+            <h1>Let's Chat</h1>
+        </div>
+        <div class="message-area">
+
+        </div>
+        <div class="bottom">
+            <div>
+                <textarea name="" id="textarea" cols="30" rows="1" placeholder="Write a message..."></textarea>
+            </div>
+            <div>
+               <button class="submit"><i class="fa fa-share" aria-hidden="true" id="submit"></i></button>
+            </div>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+   </body>
+</html>
