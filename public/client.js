@@ -25,7 +25,7 @@ function sendMessage(msgx){
     }
     //Append
     appendMessage(msg,'outgoing-message')
-    // scrollToBottom();
+    scrollToBottom();
     //Send to server
     socket.emit('message',msg)//event send kar diya server ko
 }
@@ -43,8 +43,8 @@ messageArea.appendChild(Maindiv);
 //Recieve messages
 socket.on('message',(msg)=>{
  appendMessage(msg,'incoming-message');
-//  scrollToBottom()
+scrollToBottom()
 })
-// function scrollToBottom(){
-//     messageArea.scrollTop=messageArea.clientHeight;
-// }
+function scrollToBottom(){
+  messageArea.scrollTop=messageArea.clientHeight;
+}
